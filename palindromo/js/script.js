@@ -11,6 +11,7 @@
 //   alert('la parola non è palindroma')
 // }
 var parola = prompt('inserisci una parola');
+console.log(parola);
 console.log(isPalindromo(parola));
 
 function isPalindromo(name) {
@@ -18,6 +19,7 @@ function isPalindromo(name) {
   var messaggio;
   for (var i = 0; i < parola.length; i++){
   inverse = parola[i] + inverse;
+  console.log(inverse);
   };
   if (parola == inverse) {
     messaggio = 'la parola è palindroma';
